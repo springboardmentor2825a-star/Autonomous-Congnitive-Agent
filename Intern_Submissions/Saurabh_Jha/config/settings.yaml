@@ -1,0 +1,5 @@
+engine:
+  max_execution_steps: 8
+  escalation_threshold: evidence_insufficiency
+ui:
+  framework: streamlit
