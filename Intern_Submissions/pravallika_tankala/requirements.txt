@@ -1,0 +1,11 @@
+google-generativeai
+python-dotenv
+Django>=5.0
+djangorestframework
+streamlit
+requests
+sentence-transformers
+faiss-cpu
+
+
+
