@@ -1,0 +1,10 @@
+OPENAI_API_KEY=your-open_ai-api-key-here
+SERPER_API_KEY=your-serper-api-key-here
+RESEARCH_AGENT_LLM=groq/llama-3.3-70b-versatile
+ANALYST_AGENT_LLM=groq/llama-3.3-70b-versatile
+WRITER_AGENT_LLM=groq/llama-3.3-70b-versatile
+QA_AGENT_LLM=groq/llama-3.3-70b-versatile
+RESEARCH_AGENT_TEMPERATURE=0.1
+ANALYST_AGENT_TEMPERATURE=0.2
+WRITER_AGENT_TEMPERATURE=0.3
+QA_AGENT_TEMPERATURE=0.4
