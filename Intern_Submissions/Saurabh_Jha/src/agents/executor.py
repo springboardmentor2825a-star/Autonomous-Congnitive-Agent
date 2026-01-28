@@ -4,26 +4,24 @@ from src.tools.web_search import web_search
 class ExecutorAgent:
     def execute(self, task: str):
         """
-        Execute a task using external tools.
-        Includes graceful fallback if web evidence is insufficient.
+        Execute a task using web search.
+        Falls back only if no real sources are found.
         """
-
         results = web_search(task)
         enriched_results = []
 
-        # Primary path: real web evidence
-        if results and len(results) >= 2:
+        if results:
             for r in results:
                 enriched_results.append(
-                    f"Task: {task}\n{r}"
+                    f"Source: {r['title']}\n"
+                    f"URL: {r['url']}\n"
+                    f"Snippet: {r['snippet']}"
                 )
-
-        # Fallback path: structured synthetic evidence
         else:
+            # Safe fallback (kept intentionally)
             enriched_results.extend([
-                f"Source: Internal Knowledge Base | Insight: {task} is widely discussed in enterprise AI architecture literature.",
-                f"Source: Industry Whitepapers | Insight: {task} is commonly applied in scalable decision-support systems.",
-                f"Source: Research Surveys | Insight: {task} emphasizes planning, tool orchestration, and safety controls."
+                f"Source: Internal Knowledge Base\n"
+                f"Snippet: General information related to {task}.",
             ])
 
         return enriched_results
