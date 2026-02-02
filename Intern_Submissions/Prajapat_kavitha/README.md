@@ -1,6 +1,8 @@
 # 🧠 Autonomous Cognitive Research Engine 
 ### *Deep Research & Long-Horizon Task Execution*
 > **Live Demo:** [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/pjkth/Dummy)
+
+
 ACRE is an autonomous research system designed to simulate the workflow of a professional analyst. Unlike simple chatbots, it understands a high-level goal, breaks it into logical sub-tasks, gathers data from multiple sources and synthesizes a structured report with human oversight.
 
 ## 🚀 System Capabilities
