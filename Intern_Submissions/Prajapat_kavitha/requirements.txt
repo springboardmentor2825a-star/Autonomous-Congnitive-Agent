@@ -1,0 +1,11 @@
+torch
+transformers
+accelerate
+sentence-transformers
+langgraph
+faiss-cpu
+pypdf
+numpy
+duckduckgo_search
+gradio
+markdown-pdf
