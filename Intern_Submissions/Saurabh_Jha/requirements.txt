@@ -1,0 +1,10 @@
+openai
+tiktoken
+python-dotenv
+requests
+beautifulsoup4
+sentence-transformers
+faiss-cpu
+pydantic
+rich
+streamlit

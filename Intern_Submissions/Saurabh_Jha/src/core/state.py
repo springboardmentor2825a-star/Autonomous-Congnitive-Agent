@@ -1,0 +1,11 @@
+from enum import Enum
+
+
+class AgentState(Enum):
+    IDLE = "IDLE"
+    PLANNING = "PLANNING"
+    EXECUTING = "EXECUTING"
+    REFLECTING = "REFLECTING"
+    EVALUATING = "EVALUATING"
+    ESCALATED = "ESCALATED"
+    COMPLETED = "COMPLETED"
